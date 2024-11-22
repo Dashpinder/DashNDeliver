@@ -38,23 +38,26 @@ body {
      color: #FDFEFE;
 }
 
-
+#barIcon{
+    display: none;
+}
 
 /* Media Query */
 
 @media screen and (max-width: 480px) {
     #navbar {
-        height: auto;
+        height: auto; /* Adjust height to fit content */
         width: 100vw;
     }
 
     .container {
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
+
         height: auto; 
         padding: 10px;
-
+    }
+    
+    #barIcon{
+        display: block;
     }
 
     .logo img {
@@ -64,30 +67,46 @@ body {
 
     .cntr ul {
         flex-direction: column;
-        gap: 20px;
+        line-height: 30px;
         margin: 10px 0;
+        height: 89vh;
+        position: absolute;
+        background-color: black;
+        width: 400px;
+        right: 0;
+        top: 60px;
+        padding-top: 70px;
+        text-align: center;
+    }
+
+    .cntr ul li:hover {
+        background-color: gray;
+    }
+
+    .container{
+        justify-content: space-between;
+    }
+
+   .cntr {
+       display: none;
+    }
+
+    .right span, .right button{
         display: none;
     }
 
     .cntr ul li a {
-        font-size: 14px;
-        color: #ffffff;
-    }
-
-    .right {
-        flex-direction: column;
-        gap: 10px; 
-        align-items: center;
-        display: none;
+        font-size: 14px; /* Adjust font size */
+        color: #ffffff; /* Ensure text is visible */
     }
 
     .right button {
-        padding: 5px 10px;
-        font-size: 12px;
+        padding: 5px 10px; /* Adjust button size */
+        font-size: 12px; /* Adjust font size */
     }
 
     .right span {
-        font-size: 18px;
+        font-size: 18px; /* Adjust icon size */
     }
 }
 
@@ -293,16 +312,7 @@ body {
 
 
   }
-
-
-
-@media screen and (max-width: 370px){
-   #photo{
-      width: 289px !important;
-   }
-
-}
-
+  
 
 
 
@@ -471,7 +481,7 @@ body {
     }
 
     #photo{
-        width: 300px;
+        width: 270px;
         height: 220px;
     }
 
@@ -480,14 +490,22 @@ body {
     }
 
     .al {
-        width: 100%;
+        width: 90%;
         margin: auto;
+        background-color: black;
+       color: white;
+    }
+
+    #des{
+        color: white;
+        font-size: 10px;
     }
 
    .appDwnlad h2{
      text-align: center;
     width: 360px !important;
     font-size: 20px !important;
+    
 }
 
 
@@ -660,6 +678,14 @@ body {
     .ftrCntr{
      margin-bottom: 70px;
     }
+
+}
+
+@media screen and (max-width: 360px){
+   #photo{
+      width: 289px !important;
+   }
+
 }
 
 
