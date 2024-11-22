@@ -92,6 +92,9 @@ body {
     color: white;
    }
 
+#des{
+    color: white !important;
+   }   
 
    .cntr {
        display: none;
