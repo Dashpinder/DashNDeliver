@@ -385,3 +385,20 @@ btn2.addEventListener("click", function(){
     frmId.style.display= "block";   
 
 });
+
+
+// Hemberg Menu
+const barIcon = document.getElementById("barIcon");
+const cntr = document.querySelector(".cntr");
+
+// Toggle the menu visibility
+barIcon.addEventListener("click", function () {
+    if (cntr.style.display === "none" || cntr.style.display === "") {
+        cntr.style.display = "block";
+        barIcon.innerHTML = `<i class="fa-solid fa-xmark"></i>`; // Show close icon
+    } else {
+        cntr.style.display = "none";
+        barIcon.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+        barIcon.style.color= "white";
+    }
+});
