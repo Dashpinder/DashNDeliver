@@ -401,4 +401,10 @@ barIcon.addEventListener("click", function () {
         barIcon.innerHTML = `<i class="fa-solid fa-bars"></i>`;
         barIcon.style.color= "white";
     }
+
+    if(rghCont.style.display === "none" || rghCont.style.display === ""){
+       rghCont.style.display= "block";
+    } else{
+        rghCont.style.display= "none";
+    }
 });
