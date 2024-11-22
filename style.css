@@ -46,7 +46,7 @@ body {
 
 @media screen and (max-width: 480px) {
     #navbar {
-        height: auto; /* Adjust height to fit content */
+        height: auto;
         width: 100vw;
     }
 
@@ -72,7 +72,7 @@ body {
         height: 89vh;
         position: absolute;
         background-color: black;
-        width: 100vw;
+        width: 400px;
         right: 0;
         top: 60px;
         padding-top: 70px;
@@ -87,47 +87,26 @@ body {
         justify-content: space-between;
     }
 
-   .al{
+.al{
     background-color: black;
     color: white;
    }
 
-   #des{
+#des{
     color: white !important;
    }   
-
 
    .cntr {
        display: none;
     }
 
-    .rghCont{
+    .right span, .right button{
         display: none;
-    }
-
-    .rghCont span{
-        display: none;
-    }
-
-    .rghCont button{
-        position: absolute;
-        display: flex;
-        top: 460px;
-        right: 140px;
-        text-align: center;
-        font-size: 20px;
-        flex-direction: column;
-        color: red !important;
-    }
-
-    .rghCont #btn2{
-        width: 69px;
-        border: 2px solid white;
     }
 
     .cntr ul li a {
-        font-size: 14px; 
-        color: #ffffff; 
+        font-size: 14px; /* Adjust font size */
+        color: #ffffff; /* Ensure text is visible */
     }
 
     .right button {
@@ -168,7 +147,6 @@ body {
 .right span {
     margin-top: 5px;
     color: #34495e;
-    margin-right: 20px;
     font-size: 21px;
     cursor: pointer;
 }
@@ -836,5 +814,3 @@ body {
     border-radius: 10px;
     font-size: 13px;
 }
-
-
