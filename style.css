@@ -293,7 +293,16 @@ body {
 
 
   }
-  
+
+
+
+@media screen and (max-width: 370px){
+   #photo{
+      width: 288px;
+   }
+
+}
+
 
 
 
