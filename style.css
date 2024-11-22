@@ -44,7 +44,7 @@ body {
 
 @media screen and (max-width: 480px) {
     #navbar {
-        height: auto; /* Adjust height to fit content */
+        height: auto;
         width: 100vw;
     }
 
@@ -58,36 +58,36 @@ body {
     }
 
     .logo img {
-        width: 70px; /* Scale down the logo */
-        height: auto; /* Maintain aspect ratio */
+        width: 70px; 
+        height: auto;
     }
 
     .cntr ul {
-        flex-direction: column; /* Stack navigation items */
-        gap: 20px; /* Reduce the gap */
-        margin: 10px 0; /* Add some margin around */
+        flex-direction: column;
+        gap: 20px;
+        margin: 10px 0;
         display: none;
     }
 
     .cntr ul li a {
-        font-size: 14px; /* Adjust font size */
-        color: #ffffff; /* Ensure text is visible */
+        font-size: 14px;
+        color: #ffffff;
     }
 
     .right {
-        flex-direction: column; /* Stack buttons and icons vertically */
-        gap: 10px; /* Reduce the gap */
-        align-items: center; /* Center align */
+        flex-direction: column;
+        gap: 10px; 
+        align-items: center;
         display: none;
     }
 
     .right button {
-        padding: 5px 10px; /* Adjust button size */
-        font-size: 12px; /* Adjust font size */
+        padding: 5px 10px;
+        font-size: 12px;
     }
 
     .right span {
-        font-size: 18px; /* Adjust icon size */
+        font-size: 18px;
     }
 }
 
