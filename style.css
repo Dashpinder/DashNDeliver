@@ -271,9 +271,12 @@ body {
       width: 100%;
       padding-left: 0px;
       margin-top: 20px;
-
     }
-  
+
+    .cart-count{
+        display: none;
+    }
+    
     .leftHeader h1 {
       font-size: 1.7rem;
       width: auto;
