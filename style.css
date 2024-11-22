@@ -46,7 +46,7 @@ body {
 
 @media screen and (max-width: 480px) {
     #navbar {
-        height: auto; /* Adjust height to fit content */
+        height: auto;
         width: 100vw;
     }
 
@@ -87,9 +87,9 @@ body {
         justify-content: space-between;
     }
 
-   .al{
+.al{
     background-color: black;
-       color: white;
+    color: white;
    }
 
 
