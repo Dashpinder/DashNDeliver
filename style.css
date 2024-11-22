@@ -87,6 +87,11 @@ body {
         justify-content: space-between;
     }
 
+   .al{
+    background-color: black;
+   }
+
+
    .cntr {
        display: none;
     }
@@ -481,7 +486,7 @@ body {
     }
 
     #photo{
-        width: 270px;
+        width: 300px;
         height: 220px;
     }
 
@@ -489,23 +494,17 @@ body {
         margin-left: 150px;
     }
 
-    .al {
-        width: 90%;
-        margin: auto;
-        background-color: black;
-       color: white;
-    }
 
-    #des{
-        color: white;
-        font-size: 10px;
+
+    .al {
+        width: 100%;
+        margin: auto;
     }
 
    .appDwnlad h2{
      text-align: center;
     width: 360px !important;
     font-size: 20px !important;
-    
 }
 
 
