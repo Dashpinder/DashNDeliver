@@ -1,3 +1,29 @@
+
+const slides= ["images/banner7.avif", "images/banner5.avif", "images/banner8.avif"];
+
+let currentIndex= 0;
+
+const picheBtn= document.getElementById("picheBtn");
+const ageBtn= document.getElementById("ageBtn");
+
+function updateImages(dash){
+   const pika= document.getElementById("pika");
+   pika.src= slides[dash];
+
+}
+    picheBtn.addEventListener("click", function(){
+      currentIndex= (currentIndex - 1 + slides.length) % slides.length;
+      updateImages(currentIndex);
+   });
+
+   ageBtn.addEventListener("click", function(){
+    currentIndex= (currentIndex + 1) % slides.length;
+      updateImages(currentIndex);
+   });
+
+updateImages(currentIndex);
+
+
 let menuContainer= document.querySelector(".menuContainer");
 let prevBtn= document.getElementById("prevBtn");
 let nextBtn= document.getElementById("nextBtn");
