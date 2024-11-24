@@ -65,6 +65,10 @@ body {
         height: auto;
     }
 
+    .sub-menu div{
+      display: none;
+    }
+    
     .cntr ul {
         flex-direction: column;
         line-height: 30px;
