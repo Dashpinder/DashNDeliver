@@ -428,3 +428,45 @@ barIcon.addEventListener("click", function () {
         barIcon.style.color= "white";
     }
 });
+
+
+// sign up toggle functionality krni
+
+let formContainer= document.getElementById("form-container");
+let togleLogin= document.getElementById("togleLogin");
+
+
+togleLogin.addEventListener("click", function(){
+    formContainer.innerHTML= 
+    `
+       <h2>Login Form</h2>
+        <input type="text" placeholder="Enter your name" id="name"><br><br>
+        <input type="email" placeholder="Email" id="mail"><br><br>
+        <input type="password" placeholder="Password" id="paswrd"><br>
+        <button id="btnFld">Sign up</button>
+        <p>Already a member?<a id="togleSign"> Sign up</a></p>
+
+    `
+
+let togleSign= document.getElementById("togleSign");
+
+togleSign.addEventListener("click", function(){
+    formContainer.innerHTML=
+    `
+        <h2>Sign Up Form</h2><br>
+        <input type="email" placeholder="Email" id="mail"><br><br>
+        <input type="password" placeholder="Password" id="paswrd"><br>
+        <button id="btnFld">Sign up</button>
+        <p>Create a new account?<a id="togleLogin"> Login</a></p>
+    
+    `
+  document.getElementById("togleLogin").addEventListener("click",function(){
+    togleLogin.click();
+  });
+
+
+});
+
+
+});
+
