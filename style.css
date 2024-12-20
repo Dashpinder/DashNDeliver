@@ -421,6 +421,8 @@ body {
         width: 80%;
         margin-left: 30px;
         align-items: center;
+        scrollBar-width: none;
+       overflow-x: scroll;
     }
 
     .menuContainer > div {
